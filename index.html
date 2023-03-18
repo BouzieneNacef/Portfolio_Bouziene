@@ -1,42 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
-    <title>Full-stack developer</title>
+<html>
+<head>
+	<title>Dennis Ivanov</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
 </head>
 <body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="images/nacef.jpg" >
+					<hr>
+					<h4>Hi I'm Bouziene Nacef!</h4>
+					<p>Django full-stack developer</p>
+				</div>
+			</div>
 
-    <header>
-        <a>About</a>
-        <a>My Skills</a>
-        <a>Certifications</a>
-        <a>Project</a>
-        <a>Contact</a>
-    
-    </header>
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>Summary</h4>
+					<hr>
+					<p>Highly skilled full stack Django developer with experience designing and developing 
+                        web applications. Expertise in front-end development using HTML, CSS, JavaScript and jQuery, 
+                        as well as experience in building RESTful APIs and integrating third-party services. 
+                        Proficient in using Django ORM, PostgreSQL, MySQL, and Redis for backend development.
+                         Skilled in implementing responsive design and cross-browser compatibility. 
+                         Ability to work independently or as part of a team to deliver quality projects on time.</p>
 
-    <main>
-        <section>
-            <h1>HI, I'M BOUZIENE NACEF </h1>
-            <h2>Django Full-stack developer</h2>
-            <p> I am DJANGO Full-stack developer with experience in designing,
-                 developing, and maintaining web.
-            </p>
-        </section>
-        <section>
-            <h2>Skills : </h2>
-            <h3>Programming:</h3>
-            <ul>Python</ul>
-            <ul>JavaScript</ul>
-            <ul>Html and CSS</ul>
-            <ul>Java</ul>
-            <ul>c</ul>
-        </section>
-    </main>
+					<ul class="social-links">
+						<li><img class="social" src="{% static 'images/facebook.png' %}"></li>
+						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+						<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+						<li><img class="social" src="{% static 'images/youtube.png' %}"></li>
+					</ul>
 
-    <footer>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Experience as a Developer</h5>
+					<hr>
+					<p>Designed and developed multiple web applications using Django framework</p>
+					<p>Designed, built and managed a lab management system as a sole developer.
+                         System supported thousands of customers with a UI for Lab Admins and a customer 
+                         dashboard.</p>
+					</div>
+			</div>
 
-    </footer>
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>What I Know</h5>
+					<hr>
+                    
+					<p> Full stack development using Django                        
+                        <li>Front-end development with HTML, CSS, JavaScript </li> 
+                        <li>Django REST Framework</li>
+                        <li>Object-Relational Mapping (ORM)</li>
+                        <li>Database design and management using PostgreSQL, MySQL and PL/SQL</li>
+                        <li>Proficient in Git and GitHub for version control</li>
+                        <li>Familiarity with agile methodologies and project management tools such as Jira and Trello</li>
+                        <li>Strong problem-solving skills and ability to work independently or as part of a team</li>
+                    </p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece.
+                         I break the code where I need to figure out why things work the way they do. 
+                         Documentation is just a reference.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Short Term Goals</h5>
+				<hr>
+				<p>After almost two years of supporting my system at the lab I’m ready to learn something new.
+                     I'll collaborating and sharing my experience with others on my blog (SayHelloWorld.co)
+                      & youtube channel.</p>
+				<p>Aside from building small projects I would love to enter a position where I can be 
+                    part of a bigger team & learn from others with more experience than myself.</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
 </body>
 </html>
